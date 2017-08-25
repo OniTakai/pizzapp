@@ -1,0 +1,34 @@
+Please confirm your selections:
+
+<form method="post" action="/confirm">
+<%my_size.each do |size_pick|%>
+<p><input type ="radio"  value="<%=size_pick%>" name="my_size[]" require checked >Yes <%=size_pick%></p>
+<p><input type ="radio"  value="<%=size_pick%>" name="my_size[]" require checked>No <%=size_pick%></p>
+<img src = "/img/<%= size_pick %>.jpg">
+<%end%>
+</form>
+
+<form method="post" action="/confirm">
+<%my_meat.each do |meat_pick|%>
+<p><input type ="radio"  value="<%=meat_pick%>" name="my_meat[]"require checked>Yes <%=meat_pick%></p>
+<p><input type ="radio"  value="<%=meat_pick%>" name="my_meat[]"require checked>No <%=meat_pick%></p>
+<img src = "/img/<%= meat_pick %>.jpg">
+<%end%>
+</form>
+
+<form method="post" action="/confirm">
+<%my_veg.each do |veg_pick|%>
+<p><input type ="radio"  value="<%=veg_pick%>" name="my_veg[]"require checked>Yes <%=veg_pick%></p>
+<p><input type ="radio"  value="<%=veg_pick%>" name="my_veg[]"require checked>No <%=veg_pick%></p>
+<img src = "/img/<%= veg_pick %>.jpg">
+<%end%>
+
+<form method="post" action="/confirm">
+<%my_cheese.each do |cheese_pick|%>
+<p><input type ="radio"  value="<%=cheese_pick%>" name="my_cheese[]"require checked>Yes <%=cheese_pick%></p>
+<p><input type ="radio"  value="<%=cheese_pick%>" name="my_cheese[]"require checked>No <%=cheese_pick%></p>
+<img src = "/img/<%= cheese_pick %>.jpg">
+<%end%>
+
+
+
