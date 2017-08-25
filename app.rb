@@ -26,7 +26,7 @@ post 'confirm' do
 end 
 
 get '/results' do 
-    erb :results, locals: {my_size_confirm: session[my_size_confirm], my_meat_confirm: session[my_meat_confirm],my_veg_confirm: session[my_veg_confirm], my_cheee_confirm: session[my_cheese_confirm]}
+    erb :results, locals: {my_size_confirm: session[:my_size_confirm], my_meat_confirm: session[:my_meat_confirm],my_veg_confirm: session[:my_veg_confirm], my_cheese_confirm: session[:my_cheese_confirm]}
 end 
 
 post '/results' do

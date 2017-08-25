@@ -1,6 +1,6 @@
 Please confirm your selections:
 
-<form method="post" action="/confirm">
+<form method="post" action="/results">
 <%my_size.each do |size_pick|%>
 <p><input type ="radio"  value="<%=size_pick%>" name="my_size_confirm[]" require checked >Yes <%=size_pick%></p>
 <p><input type ="radio"  value="<%=size_pick%>" name="my_size_confirm[]" require checked>No <%=size_pick%></p>
