@@ -1,2 +1,17 @@
 Here is your sandwich:
-<%=my_meat_confirm%>
+Size:
+<%my_size_confirm.each do |value|%>
+<p><%=value.to_s%></p>
+<%end%>
+Meat:
+<%my_meat_confirm.each do |value|%>
+<p><%=value.to_s%></p>
+<%end%>
+Veggies:
+<%my_veg_confirm.each do |value|%>
+<p><%=value.to_s%></p>
+<%end%>
+Cheese:
+<%my_cheese_confirm.each do |value|%>
+<p><%=value.to_s%></p>
+<%end%>

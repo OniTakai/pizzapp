@@ -10,8 +10,8 @@ Please confirm your selections:
 
 <%meat_count = 0%>
 <%my_meat.each do |meat_pick|%>
-<p><input type ="radio"  value="<%=meat_pick%>" name="my_meat_confirm[]"require checked>Yes <%=meat_pick%></p>
-<p><input type ="radio"  value="<%=meat_pick%>" name="my_meat_confirm[]"require checked>No <%=meat_pick%></p>
+<p><input type ="radio"  value="<%=meat_pick%>" name="my_meat_confirm[<%=meat_pick%>]"require checked>Yes <%=meat_pick%></p>
+<p><input type ="radio"  value="<%=meat_pick%>" name="my_meat_confirm[<%=meat_pick%>]"require checked>No <%=meat_pick%></p>
 <img src = "/img/<%= meat_pick %>.jpg">
 <%meat_count+=1%>
 <%end%>
@@ -19,8 +19,8 @@ Please confirm your selections:
 
 <%veg_count = 0%>
 <%my_veg.each do |veg_pick|%>
-<p><input type ="radio"  value="<%=veg_pick%>" name="my_veg_confirm[]"require checked>Yes <%=veg_pick%></p>
-<p><input type ="radio"  value="<%=veg_pick%>" name="my_veg_confirm[]"require checked>No <%=veg_pick%></p>
+<p><input type ="radio"  value="<%=veg_pick%>" name="my_veg_confirm[<%=veg_pick%>]"require checked>Yes <%=veg_pick%></p>
+<p><input type ="radio"  value="<%=veg_pick%>" name="my_veg_confirm[<%=veg_pick%>]"require checked>No <%=veg_pick%></p>
 <img src = "/img/<%= veg_pick %>.jpg">
 <%veg_count+=1%>
 <%end%>
@@ -28,8 +28,8 @@ Please confirm your selections:
 
 <%cheese_count= 0%>
 <%my_cheese.each do |cheese_pick|%>
-<p><input type ="radio"  value="<%=cheese_pick%>" name="my_cheese_confirm[]"require checked>Yes <%=cheese_pick%></p>
-<p><input type ="radio"  value="<%=cheese_pick%>" name="my_cheese_confirm[]"require checked>No <%=cheese_pick%></p>
+<p><input type ="radio"  value="<%=cheese_pick%>" name="my_cheese_confirm[<%=cheese_pick%>]"require checked>Yes <%=cheese_pick%></p>
+<p><input type ="radio"  value="<%=cheese_pick%>" name="my_cheese_confirm[<%=cheese_pick%>]"require checked>No <%=cheese_pick%></p>
 <img src = "/img/<%= cheese_pick %>.jpg">
 <%cheese_count+=1%>
 <%end%>
